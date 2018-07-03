@@ -1,0 +1,25 @@
+.comments-wrapper {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+    box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+}
+.comments {
+    height: 470px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+}
+.commentsVisibilityToggleButton {
+    color: #ffa640;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: 18px;
+    margin: 25px 20px 20px 20px;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    &:hover {
+        color: #8298B9;
+    }
+}
