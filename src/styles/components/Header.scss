@@ -18,6 +18,7 @@
 		top: 10px;
 		right: 10px;
 		z-index: 3;
+		cursor: pointer;
 		&::before {
 			content: '\f045';
 			font-family: 'FontAwesome';
@@ -25,7 +26,6 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			cursor: pointer;
 			transition: all .5s ease-out;
 		}
 		&:hover::before {
@@ -33,16 +33,18 @@
 		}
 	}
 	& .profile-URL {
-		width: 260px;
+		width: 320px;
 		height: 24px;
-		background: rgba(255, 255, 255, 0.7);
+		padding: 5px 10px;
+		color: #002c71;
+		background: rgba(255, 255, 255, 0.85);
 		border: 1px solid #8298b9;
 		border-radius: 5px;
 		text-align: center;
 		font-size: 14px;
 		line-height: 24px;
 		position: absolute;
-		top: 10px;
+		top: -30px;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 1;

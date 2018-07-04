@@ -35,11 +35,11 @@ export default class Comments extends React.Component {
 			<div className="comments-wrapper">
 				<p 
 					onClick={ this.toggleCommentsVisibility } 
-					className="commentsVisibilityToggleButton"
+					className="comments-visibility-toggle-button"
 				>
 					{ this.state.commentsVisible 
 						? <span>Hide comments</span> 
-					: <span>Show comments</span> } ({ this.state.comments.length })
+						: <span>Show comments</span> } ({ this.state.comments.length })
 				</p>
 				{ this.state.commentsVisible && (
 						<React.Fragment>
