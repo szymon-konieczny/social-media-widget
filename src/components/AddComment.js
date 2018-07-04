@@ -10,7 +10,6 @@ export default class AddComment extends React.Component {
     modalIsOpen: false,
     authorName: 'Anonymous',
     authorId: 9999,
-    timeOfAdd: moment().format('YYYY-MM-DD'),
     content: null
   };
 
@@ -27,7 +26,7 @@ export default class AddComment extends React.Component {
 
     const commentConfig = {
       authorId: this.state.authorId,
-      timeOfAdd: this.state.timeOfAdd,
+      timeOfAdd: moment().format('YYYY-MM-DD'),
       content: this.state.content
     }
     this.props.commentData(commentConfig);
@@ -35,9 +34,9 @@ export default class AddComment extends React.Component {
   }
 
   setContent = (e) => {
-    this.setState(({
+    this.setState({
       content: e.target.value
-    }))
+    });
   }
 
 	render() {
@@ -88,6 +87,6 @@ export default class AddComment extends React.Component {
             </form>
          </Modal>
 			</div>
-		)
-	}
-}
+		);
+	};
+};
