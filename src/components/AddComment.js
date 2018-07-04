@@ -34,12 +34,6 @@ export default class AddComment extends React.Component {
     this.closeModal();
   }
 
-  setAuthorName = (e) => {
-    this.setState(({
-      authorName: e.target.value
-    }))
-  }
-
   setContent = (e) => {
     this.setState(({
       content: e.target.value
@@ -66,17 +60,18 @@ export default class AddComment extends React.Component {
               className="add-comment-form"
               onSubmit={ this.handleSetCommentData }
             >
-              <label className="input-label"><span>Name:</span> 
+              <label className="input-label">
+                <span>Name:</span> 
                 <input 
                   className="comment-input" 
-                  type="text" name="userName" 
+                  type="text"
                   value="Anonymous" 
-                  onChange={ this.setAuthorName }
                   required="required"
                   disabled="disabled"
                 />
                 </label>
-              <label className="input-label"><span>Comment:</span>
+              <label className="input-label">
+                <span>Comment:</span>
                 <textarea 
                   className="comment-input content"
                   placeholder="Write a comment :)"
