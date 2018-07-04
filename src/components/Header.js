@@ -22,9 +22,7 @@ export default class Header extends React.Component {
 				/>
 				{ 
 					this.state.profileURLDisplayed && (
-						<div type="text" className="profile-URL">
-							{ this.props.profileURL }
-						</div>
+						<input type="text" className="profile-URL" defaultValue={ this.props.profileURL } />
 					)
 				}
 				<div className="header-top">
